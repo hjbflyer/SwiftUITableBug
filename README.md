@@ -1,4 +1,4 @@
-This small app demonstrates a SwiftUI Table bug.
+This small app demonstrates a SwiftUI Table bug - and a work around.
 
 The app displays a person table with a context menu. This context menu should open a new view, allowing to edit this person data.
 Because persons could have more than one address, the new view should display the address data in a new Table. This fails.
@@ -11,3 +11,8 @@ Here is the screenshot of the running app. The table is not rendered.
 
 ![RunningApp](https://github.com/user-attachments/assets/3d8dd31f-b096-4af5-9d0e-e73fcab666ed)
 
+WORK AROUND:
+
+The table will be displayed, if some space will be reserved with
+
+```.frame(height: 250.0)```
