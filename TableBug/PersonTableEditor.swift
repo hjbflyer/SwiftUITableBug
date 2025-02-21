@@ -25,6 +25,9 @@ struct PersonTableEditor: View {
       }
       Button { dismiss() } label: { Text("Cancel") }
     }
+    // Work around to display the table
+    .frame(height: 250.0)
+    // ^^^^^^^^^^^^^^^^^^
     .padding()
   }
 }
